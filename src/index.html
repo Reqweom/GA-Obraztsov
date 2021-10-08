@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,43 +7,44 @@
     <title>Питомник Мейн-Кунов</title>
 </head>
 <body class = "page">
-    <header class = "header">
+
+    <header class = "header page__header">
         <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="">Главная</a></li>
-                    <li><a href="">Питомник</a></li>
-                    <li><a href="">Контакты</a></li>
-                </ul>
-                <img src="http://placehold.it/59x59" alt="logo">
+            <nav class="nav__menu">
+                <a href="" class="nav__menu-link">Главная</a>
+                <a href="" class="nav__menu-link">Питомник</a>
+                <a href="" class="nav__menu-link">Контакты</a>
+                <a href="" class="nav__menu-logo">Лого</a>
             </nav>
+            <div class="header__inner">     
+                <span class = "header__inner-city txt">Новосибирск</span>
+                <h1 class="header__inner-title">Питомник Мейн-Кунов</h1>
+                <p class = "header__inner-pref txt">Первый питомник с расширенным спектром услуг</p>
+                <a href="#" class="header__inner-link button">Смотреть котиков</a>
+            </div> 
+            <img src="img/MainCoon.png" alt="" class="header-cat">
         </div>
-            <p class = "p-g">Новосибирск</p>
-            <h1 class="h1">Питомник Мейн-Кунов</h1>
-            <p class = "p-g">Первый питомник с расширенным списком услуг</p>
-            <button class = "btnbn">Смотреть котиков</button>
-        <ul>
-            <li><a href="" class="social-header">Facebook</a></li>
-            <li><a href="" class="social-header">Twitter</a></li>
-            <li><a href="" class="social-header">VK</a></li>
+        <ul class="header__social">
+            <li><a href="" class="header__social-link">Facebook</a></li>
+            <li><a href="" class="header__social-link">Twitter</a></li>
+            <li><a href="" class="header__social-link">VK</a></li>
         </ul>
     </header>
-    <main class = "main">
+
+    <main class = "main page__main">
 
         <div class="container">
 
-            <section class="section-pets"> <!--Питомцы-->
-                <h2 class="h2">Питомцы</h2>
-                <p class="p-pets">Все представители нашего питомника имеют ветеринарный паспорт с отметками о прививках и документ с родословной</p>
-                <ul>
-                    <li><a href="">Коты</a></li>
-                    <li><a href="">Кошки</a></li>
-                    <li><a href="">Котята</a></li>
-                </ul>
-                <img src="http://placehold.it/200x50" alt="">
-                <img src="http://placehold.it/200x50" alt="">
-                <img src="http://placehold.it/200x50" alt="">
-                <button class="btn">Смотреть больше</button>
+            <section class="main__pets"> <!--Питомцы-->
+                <h2 class="main__pets-title title">Питомцы</h2>
+                <p class="main__pets-pref txt">Все представители нашего питомника имеют ветеринарный паспорт с отметками о прививках и документ с родословной</p>
+                <a href="" class="main__pets-menu">Коты</a>
+                <a href="" class="main__pets-menu">Кошки</a>
+                <a href="" class="main__pets-menu">Котята</a>
+                <img src="img/MaskGroup.png" alt="Кот">
+                <img src="img/MaskGroup0.png" alt="Кот">
+                <img src="img/MaskGroup1.png" alt="Кот">
+                <a class="main__pets-link button">Смотреть больше</a>
                 <h2 class="h2">Особенности породы</h2>
                 <p class="p-pets">Мейн-Кун - это порода, которая вызывает к себе уважение. Приобретая в свой дом этого питомца, вы получите умное животное, которому нет равных </p>
                 <ul>

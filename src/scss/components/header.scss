@@ -1,3 +1,55 @@
 .header{
-    background: #000;
+    background: #1F1C1D;
+    &__inner{
+        max-width: 350px;
+        &-title{
+            font-size: 52px;
+            font-weight: 400;
+        }
+    }
+    &__social{
+        &-link{
+            text-decoration: none;
+            color: #A07B50;
+            &:hover{
+                color: white;
+                transition: 0.3s;
+            }
+        }
+        
+    }
+}
+
+.nav__menu{
+    padding: 40px 0;
+    &-link{
+        text-decoration: none;
+        color: #fff;
+        margin-right: 50px;
+        opacity: 20%;
+        font-weight: 500;
+        &:hover{
+            opacity: 100%;
+            transition: 0.3s;
+        }
+    }
+    &-logo{
+        margin-left: 50px;    
+    }
+}
+
+.txt{
+    color: #A07B50;
+}
+
+.button{
+    text-decoration: none;
+    color: #fff;
+    border: 0.5px solid #A07B50;
+    padding: 15px 40px;
+   // margin: 30px;
+    &:hover{
+        background: #A07B50;
+        transition: 0.3s;
+    }
 }
