@@ -1,0 +1,44 @@
+.main__pets{
+    margin-top: 230px;
+    text-align: center;
+}
+
+.main__pets-pref{
+    padding-left: 320px;
+    padding-right: 320px;
+}
+
+.main__pets-menu{
+    padding-right: 470px;
+    padding-left: 470px;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.main__pets-item{
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.61);
+    &:hover{
+        color: rgba(255, 255, 255, 1);
+        transition: 0.3s;
+    }
+}
+
+.main__pets-collage{
+    display: grid;
+    grid-template-columns: 530px 530px;
+    grid-template-rows: 214px 241px;
+    align-content: center; 
+    justify-items: center;
+    justify-content: center;
+    row-gap: 30px;
+    padding: 23px 0;
+    margin-bottom: 50px;
+}
+
+.title{
+    font-size: 36px;
+}

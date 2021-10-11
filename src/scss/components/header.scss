@@ -5,6 +5,7 @@
 
 .header__inner{
     max-width: 350px;
+    margin-bottom: 20px;
 }
 
 .header__inner-title{
@@ -45,7 +46,7 @@
 
 .txt{
     color: #A07B50;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .button{
@@ -53,7 +54,7 @@
     color: #fff;
     border: 0.5px solid #A07B50;
     padding: 15px 35px;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 14px;
     &:hover{
         background: #A07B50;
@@ -69,20 +70,41 @@
 
 .net{
     fill: #fff;
-    width: 13px;
-    height: 8px;
     &:hover{
         fill: #A07B50;
         transition: 0.3s; 
     }
 }
 
-.header__social{
+.header-social{
+    transform: translateX(-240px);
+    display: flex;
+}
+
+.header__social-list{
     list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    &::before{
+        position: absolute;
+        content: '';
+        height: 77.5px;
+        width: 0.5px;
+        color: #FFFFFF;
+        background-color: #FFFFFF;
+        opacity: 61%;
+        top: -90px;
+        left: 50px;
+    }
+}
+
+.header__social-item{
+    padding-bottom: 7px;
 }
 
 .header__social-link{
-    text-decoration: none;
     color: #A07B50;
     &:hover{
         color: white;

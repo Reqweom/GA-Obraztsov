@@ -1,0 +1,19 @@
+.footer{
+    height: 155px;
+    background-color: #1F1C1D;
+}
+
+.footer__components{
+    height: 155px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__social-list{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}

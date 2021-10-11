@@ -26,78 +26,115 @@
                 <p class = "header__inner-pref txt">Первый питомник с расширенным спектром услуг</p>
                 <a href="#" class="header__inner-link button">Смотреть котиков</a>
             </div>         
+            <div class="header-social">
+                <ul class="header__social-list">
+                    <li class="header__social-item"><a href="" class="header__social-link">
+                        <svg class="header__social-net net" width="13" height="8" viewBox="0 0 13 8">
+                            <use xlink:href="img/vk.svg#vk"></use>
+                        </svg>
+                    </a></li>
+                    <li class="header__social-item"><a href="" class="header__social-link">
+                        <svg class="header__social-net net" width="16" height="11" viewBox="0 0 16 11">
+                            <use xlink:href="img/twitter.svg#twitter"></use>
+                        </svg>
+                    </a></li>
+                    <li class="header__social-item"><a href="" class="header__social-link">
+                        <svg class="header__social-net net" width="6" height="12" viewBox="0 0 6 12">
+                            <use xlink:href="img/facebook.svg#facebook"></use>
+                        </svg>
+                    </a></li>
+                </ul>
+            </div>
         </div>
         <img src="img/MainCoon.png" alt="" class="header__image-cat">
-        <ul class="header__social">
-            <li class="header__social-item"><a href="" class="header__social-link">
-                <svg class="header__social-net net">
-                    <use xlink:href="img/vk.svg#vk"></use>
-                </svg>
-            </a></li>
-            <li class="header__social-item"><a href="" class="header__social-link">
-                <svg class="header__social-net net">
-                    <use xlink:href="img/twitter.svg#twitter"></use>
-                </svg>
-            </a></li>
-            <li class="header__social-item"><a href="" class="header__social-link">
-                <svg class="header__social-net net">
-                    <use xlink:href="img/facebook.svg#facebook"></use>
-                </svg>
-            </a></li>
-        </ul>
     </header>
 
     <main class = "main page__main">
 
-        <div class="container">
-
             <section class="main__pets"> <!--Питомцы-->
-                <h2 class="main__pets-title title">Питомцы</h2>
-                <p class="main__pets-pref txt">Все представители нашего питомника имеют ветеринарный паспорт с отметками о прививках и документ с родословной</p>
-                <a href="" class="main__pets-menu">Коты</a>
-                <a href="" class="main__pets-menu">Кошки</a>
-                <a href="" class="main__pets-menu">Котята</a>
-                <img src="img/MaskGroup.png" alt="Кот">
-                <img src="img/MaskGroup0.png" alt="Кот">
-                <img src="img/MaskGroup1.png" alt="Кот">
-                <a class="main__pets-link button">Смотреть больше</a>
-            </section>
-            <section class="main__preed">
-                <h2 class="main__preed-title">Особенности породы</h2>
-                <p class="main__preed-pref">Мейн-Кун - это порода, которая вызывает к себе уважение. Приобретая в свой дом этого питомца, вы получите умное животное, которому нет равных </p>
-                <ul>
-                    <li>Легко уживается в семьях с детьми или другими животными</li>
-                    <li>Внешний вид этой кошки похож на дикую рысь</li>
-                    <li>Выполняет команды как дрессированная собака</li>
-                    <li>Вес может достигать 12 кг, а длина 1 м</li>
-                </ul>
-                <img src="img/котя3.png" alt="">
+                <div class="container">
+                    <h2 class="main__pets-title title">Питомцы</h2>
+                    <p class="main__pets-pref txt">Все представители нашего питомника имеют ветеринарный паспорт с отметками о прививках и документ с родословной</p>
+                    <div class="main__pets-menu menu">
+                        <a href="" class="main__pets-item item">Коты</a>
+                        <a href="" class="main__pets-item item">Кошки</a>
+                        <a href="" class="main__pets-item item">Котята</a>
+                    </div>
+                    <div class="main__pets-collage">
+                        <img src="img/MaskGroup.png" alt="Кот" >
+                        <img src="img/MaskGroup1.png" alt="Кот">
+                        <img src="img/MaskGroup0.png" alt="Кот">
+                    </div>
+                    <a class="main__pets-link button">Смотреть больше</a>
+                </section>
+                <section class="main__preed">
+                    <h2 class="main__preed-title title">Особенности породы</h2>
+                    <p class="main__preed-pref txt">Мейн-Кун - это порода, которая вызывает к себе уважение. Приобретая в свой дом этого питомца, вы получите умное животное, которому нет равных </p>
+                    <ul>
+                        <li>Легко уживается в семьях с детьми или другими животными</li>
+                        <li>Внешний вид этой кошки похож на дикую рысь</li>
+                        <li>Выполняет команды как дрессированная собака</li>
+                        <li>Вес может достигать 12 кг, а длина 1 м</li>
+                    </ul>
+                    <img src="img/котя3.png" alt="">
+                </div>
             </section>
 
             <section class="main__aboutus"> <!--О нас-->
-                <h2 class = "main__aboutus-title">Почему именно мы?</h2>
-                <p class="main__aboutus-pref">Приобретая  животное в нашем питомнике, вы получите</p>
-                <ul>
-                    <li><a href="#" class="main__aboutus-button">Бесплатное ветеринарное обслуживание 5 лет</a></li>
-                    <li><a href="#" class="main__aboutus-button">Консультирование по любому вопросу 24 часа в сутки</a></li>
-                    <li><a href="#" class="main__aboutus-button">Индивидуальный подбор питания для вашего кота</a></li>
-                </ul>
+                <div class="container">
+                    <h2 class = "main__aboutus-title title">Почему именно мы?</h2>
+                    <p class="main__aboutus-pref txt">Приобретая  животное в нашем питомнике, вы получите</p>
+                    <ul class="main__aboutus-list">
+                        <li class="main__aboutus-item">
+                            <a href="#" class="main__aboutus-button">
+                                <div class="main__aboutus-picture">
+                                    <svg class="main__aboutus-logo" width="99" height="107"     viewBox="0 0 99 107">
+                                        <use xlink:href="img/aboutus1.svg#aboutus1"></use>
+                                    </svg>
+                                </div>
+                                    <p class="main__aboutus-description">Бесплатное ветеринарное обслуживание 5 лет</p>  
+                            </a>
+                        </li>
+                        <li class="main__aboutus-item">
+                            <a href="#" class="main__aboutus-button">
+                                <div class="main__aboutus-picture">
+                                    <svg class="main__aboutus-logo" width="107" height="97" viewBox="0 0 107 97">
+                                        <use xlink:href="img/aboutus2.svg#aboutus2"></use>
+                                    </svg>
+                                </div>
+                                <p class="main__aboutus-description">Консультирование по любому вопросу 24 часа в сутки</p>
+                            </a>
+                        </li>
+                        <li class="main__aboutus-item">
+                            <a href="#" class="main__aboutus-button">
+                                <div class="main__aboutus-picture">
+                                    <svg class="main__aboutus-logo" width="71" height="108" viewBox="0 0 71 108">
+                                        <use xlink:href="img/aboutus3.svg#aboutus3"></use>
+                                    </svg>
+                                </div>
+                                <p class="main__aboutus-description">Индивидуальный подбор питания для вашего кота</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </section>
 
             <section class="main__care"> <!--Об уходе-->
-                <h2 class="main__care-title">Об уходе за Мейн-Куном</h2>
-                <ul>
-                    <li><a href="" class="main__care-item"><h3 class="main__care-">Шерсть</h3><p class="p-care">Мы разработали 8 правил, следуя которым, шерсть вашего кота всегда будет блестящей, мягкой и послушной</p></a></li>
-                    <li><a href="" class="main__care-info"><h3 class="h3">Когти</h3><p class="p-care">Нужно ли стричь когти? Это мы и выясним, плюс ко всему расскажем как подобрать идеальную когтеточку</p></a></li>
-                    <li><a href="" class="main__care-info"><h3 class="h3">Уши и глаза</h3><p class="p-care">Владельцам котов необходимо регулярно осматривать ушки и глаза своих питомцев, ведь это может быть признаками заболевания</p></a></li>
-                    <li><a href="" class="main__care-info"><h3 class="h3">Питание</h3><p class="p-care">В нашем питомнике существует два подхода: натуральное питание и питание промышленными кормами, но выбирать только вам</p></a></li>
-                </ul>
+                <div class="container">
+                    <h2 class="main__care-title title">Об уходе за Мейн-Куном</h2>
+                    <ul>
+                        <li><a href="" class="main__care-item"><h3 class="main__care-">Шерсть</h3><p class="p-care">Мы разработали 8 правил, следуя которым, шерсть вашего кота всегда будет блестящей, мягкой и послушной</p></a></li>
+                        <li><a href="" class="main__care-info"><h3 class="h3">Когти</h3><p class="p-care">Нужно ли стричь когти? Это мы и выясним, плюс ко всему расскажем как подобрать идеальную когтеточку</p></a></li>
+                        <li><a href="" class="main__care-info"><h3 class="h3">Уши и глаза</h3><p class="p-care">Владельцам котов необходимо регулярно осматривать ушки и глаза своих питомцев, ведь это может быть признаками заболевания</p></a></li>
+                        <li><a href="" class="main__care-info"><h3 class="h3">Питание</h3><p class="p-care">В нашем питомнике существует два подхода: натуральное питание и питание промышленными кормами, но выбирать только вам</p></a></li>
+                    </ul>
+                </div>
                 <img src="img/кот.png" alt="" class="main__care-background">
             </section>
 
             <section class="main__team"> <!--Наша команда-->
-                <h2 class = "main__team-title">Наша команда</h2>
-                <p class="main__team-pref">Все сотрудники нашего питомника дипломированые специалисты в области фелинологии и ветеринарии</p>
+                <h2 class = "main__team-title title">Наша команда</h2>
+                <p class="main__team-pref txt">Все сотрудники нашего питомника дипломированые специалисты в области фелинологии и ветеринарии</p>
                 <div class="main__team-mate">
                     <img src="http://placehold.it/200x50" alt="" class="img-mate">
                     <div class="main__team-infomate">
@@ -114,8 +151,8 @@
             </section>
 
             <section class="main__question"> <!--Вопрос-ответ-->>
-                <h2 class="main__question-title">Вопрос-Ответ</h2>
-                <p class="main__question-pref">Мы ответим на самые популярные ваши вопросы</p>
+                <h2 class="main__question-title title">Вопрос-Ответ</h2>
+                <p class="main__question-pref txt">Мы ответим на самые популярные ваши вопросы</p>
                 <div class="main__question-answer">
                     <h2 class="main__question-number">01</h2>
                     <button class="main__question-accordion">С какого возраста можно забирать котенка из питомника?</button>
@@ -164,7 +201,7 @@
             </section>
             
             <section class="main__reviews"><!--Отзывы-->>
-                <h2 class="main__reviews-title">Отзывы</h2>
+                <h2 class="main__reviews-title title">Отзывы</h2>
                 <div class="main__reviews-block">
                     <img src="http://placehold.it/200x50" alt="" class="img-review">
                     <div class="main__reviews-review">
@@ -172,9 +209,9 @@
                         <p class="main__reviews-quote">Я выражаю огромную благодарность вашему питомнику.  Мой Феликс невероятно умен и воспитан. Огромным плюсом питомника является возможность консультироваться в любое время</p>
                         <p class="main__reviews-data">24 мая 2018</p>
                         <ul>
-                            <li><a href="" class="main__reviews-social">Facebook</a></li>
-                            <li><a href="" class="main__reviews-social">Twitter</a></li>
-                            <li><a href="" class="main__reviews-social">VK</a></li>
+                            <li><a href="#" class="main__reviews-social">Facebook</a></li>
+                            <li><a href="#" class="main__reviews-social">Twitter</a></li>
+                            <li><a href="#" class="main__reviews-social">VK</a></li>
                         </ul>
                     </div>
                 </div>
@@ -184,14 +221,34 @@
 
     </main>
     <footer class = "footer">
-        <img src="http://placehold.it/200x50" alt="logo" class="footer-logo logo">
-        <ul>
-            <li><a href="" class="footer-social">Facebook</a></li>
-            <li><a href="" class="footer-social">Twitter</a></li>
-            <li><a href="" class="footer-social">VK</a></li>
-        </ul>
-        <p class="footer-location">Новосибирск, Пушкинский проспект, 19</p>
-        <p class="footer-contacts">+7 (383) 900-64-65</p>
+        <div class="container"> 
+            <div class="footer__components">  
+                <a href="" class="footer-logo">
+                    <svg class="footer-crown crown">
+                        <use xlink:href="img/crown.svg#crown"></use>
+                    </svg>
+                </a>
+                <ul class="footer__social-list">
+                    <li class="footer__social-item"><a href="" class="footer__social-link">
+                        <svg class="footer__social-net net" width="13" height="8" viewBox="0 0 13 8">
+                            <use xlink:href="img/vk.svg#vk"></use>
+                        </svg>
+                    </a></li>
+                    <li class="footer__social-item"><a href="" class="footer__social-link">
+                        <svg class="footer__social-net net" width="16" height="11" viewBox="0 0 16 11">
+                            <use xlink:href="img/twitter.svg#twitter"></use>
+                        </svg>
+                    </a></li>
+                    <li class="footer__social-item"><a href="" class="footer__social-link">
+                        <svg class="footer__social-net net" width="6" height="12" viewBox="0 0 6 12">
+                            <use xlink:href="img/facebook.svg#facebook"></use>
+                        </svg>
+                    </a></li>
+                </ul>
+                <p class="footer-location">Новосибирск, Пушкинский проспект, 19</p>
+                <p class="footer-contacts">+7 (383) 900-64-65</p>
+            </div> 
+        </div>
     </footer>
 </body>
 </html>
