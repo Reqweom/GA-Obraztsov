@@ -29,8 +29,7 @@
     flex-wrap: wrap;
     &:hover{
         background-color: #A07B50;
-        border-width: 15px;
-        border-color: #1F1C1D;
+        border: 10px solid #1F1C1D;
         .main__aboutus-logo{
             fill: #fff; 
         }
@@ -41,11 +40,9 @@
 .main__aboutus-description{
     font-size: 16px;
     text-decoration: none;
-    padding-left: 65px;
-    padding-right: 65px;
+    padding-left: 55px;
+    padding-right: 55px;
     color: #fff;
-    display: flex;
-    justify-content: flex-end;
     line-height: 1.5em;
 }
 

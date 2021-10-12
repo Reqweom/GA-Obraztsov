@@ -1,0 +1,80 @@
+.main__team{
+    text-align: center;
+    background-color: #151313;
+}
+
+.main__team-title{
+    margin-top: 80px;
+}
+
+.main__team-pref{
+    padding-left: 320px;
+    padding-right: 320px;
+}
+
+.main__team-photo{
+    position: absolute;
+    left: 200px;
+    background-color: #151313;
+}
+
+.main__team-mate{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+}
+
+.main__team-infomate{
+    border: 1px solid $gold;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.main__team-block{
+    width: 700px;
+    text-align: left;
+    background-color: #1F1C1D;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.main__team-name{
+    color: $gold;
+    margin-bottom: 0;
+    font-size: 24px;
+}
+
+.main__team-position{
+    color: $gold;
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+.main__team-quote{
+    padding-right: 80px;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin-bottom: 50px;
+}
+
+.main__team-soclist{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 130px;
+    padding-left: 0;
+}
+
+.main__team-net{
+    width: 20px;
+    height: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
