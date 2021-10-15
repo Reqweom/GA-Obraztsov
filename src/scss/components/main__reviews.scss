@@ -1,0 +1,82 @@
+.main__reviews{
+    text-align: center;
+    background-color: #1F1C1D;
+}
+
+.main__reviews-title{
+    margin-top: 0;
+}
+
+.main__reviews-image{
+    bottom: 30px;
+    position: absolute;
+    left: 110px;
+}
+
+.main__reviews-socblock{
+    color: $gold;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-right: 50px;
+    align-items: center;
+}
+
+.main__reviews-block{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main__team-infomate{
+    border: 1px solid $gold;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.main__reviews-review{
+    height: 400px;
+    width: 700px;
+    text-align: left;
+    background-color: #151313;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.main__reviews-name{
+    padding-top: 30px;
+    margin-bottom: 0;
+    font-size: 24px;
+}
+
+.main__reviews-quote{
+    padding-right: 80px;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+}
+
+.main__reviews-list{
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+
+.main__reviews-item{
+    fill: $gold;
+    display: flex;
+    padding-left: 4px;
+    height: 25px;
+    width: 25px;
+    border: 0.1px solid $gold;
+    justify-content: space-between;
+    align-items: center;
+    &:hover{
+        fill: #fff;
+        transition: 0.3s ease;
+    }
+}

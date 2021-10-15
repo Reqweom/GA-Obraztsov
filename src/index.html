@@ -10,16 +10,21 @@
 
     <header class = "header page__header">
         <div class="container">
-            <nav class="nav__menu">
-                <a href="" class="nav__menu-link">Главная</a>
-                <a href="" class="nav__menu-link">Питомник</a>
-                <a href="" class="nav__menu-link">Контакты</a>
+            <div class="navbar">
+                <nav class="nav__menu nav__menu--active">
+                    <a href="" class="nav__menu-link">Главная</a>
+                    <a href="" class="nav__menu-link">Питомник</a>
+                    <a href="" class="nav__menu-link">Контакты</a>
+                </nav>
                 <a href="" class="nav__menu-logo">
                     <svg class="nav__menu-crown crown">
                         <use xlink:href="img/crown.svg#crown"></use>
                     </svg>
                 </a>
-            </nav>
+                <div class="burger-btn">
+                    <button type="button" class="burger burger--active" id="burger"><span class="burger-line"></span></button>
+                </div>
+            </div>
             <div class="header__inner">     
                 <span class = "header__inner-city txt">Новосибирск</span>
                 <h1 class="header__inner-title">Питомник Мейн-Кунов</h1>
@@ -46,7 +51,7 @@
                 </ul>
             </div>
         </div>
-        <img src="img/MainCoon.png" alt="" class="header__image-cat">
+        <img src="img/MainCoon.png" alt="Главный кот" class="header__image-cat">
     </header>
 
     <main class = "main page__main">
@@ -64,10 +69,12 @@
                         <img src="img/MaskGroup.png" alt="Кот" >
                         <img src="img/MaskGroup1.png" alt="Кот">
                         <img src="img/MaskGroup0.png" alt="Кот">
-                    </div>
-                    <a class="main__pets-link button">Смотреть больше</a>
-                </section>
-                <section class="main__preed">
+                </div>
+                <a class="main__pets-link button">Смотреть больше</a>
+            </section>
+
+            <section class="main__preed"> <!--Особенности породы-->
+                <div class="container">
                     <h2 class="main__preed-title title">Особенности породы</h2>
                     <p class="main__preed-pref txt">Мейн-Кун - это порода, которая вызывает к себе уважение. Приобретая в свой дом этого питомца, вы получите умное животное, которому нет равных </p>
                     <ul>
@@ -262,18 +269,29 @@
             </section>
             
             <section class="main__reviews"><!--Отзывы-->
-                <h2 class="main__reviews-title title">Отзывы</h2>
-                <div class="main__reviews-block">
-                    <img src="http://placehold.it/200x50" alt="" class="img-review">
-                    <div class="main__reviews-review">
-                        <h3 class="main__reviews-name">Сережа Попов</h3>
-                        <p class="main__reviews-quote">Я выражаю огромную благодарность вашему питомнику.  Мой Феликс невероятно умен и воспитан. Огромным плюсом питомника является возможность консультироваться в любое время</p>
-                        <p class="main__reviews-data">24 мая 2018</p>
-                        <ul>
-                            <li><a href="#" class="main__reviews-social">Facebook</a></li>
-                            <li><a href="#" class="main__reviews-social">Twitter</a></li>
-                            <li><a href="#" class="main__reviews-social">VK</a></li>
-                        </ul>
+                <div class="container">
+                    <h2 class="main__reviews-title title">Отзывы</h2>
+                    <div class="main__reviews-block">
+                        <img src="img/review.png" alt="" class="main__reviews-image">
+                        <div class="main__reviews-review">
+                            <h3 class="main__reviews-name">Сережа Попов</h3>
+                            <p class="main__reviews-quote">Я выражаю огромную благодарность вашему питомнику.  Мой Феликс невероятно умен и воспитан. Огромным плюсом питомника является возможность консультироваться в любое время</p>
+                            <div class="main__reviews-socblock">
+                                <time datatime="2018-05-24" class="main__reviews-data">24 мая 2018</time>
+                                <ul class="main__reviews-list">
+                                    <li class="main__reviews-item"><a href="" class="main__reviews-link">
+                                        <svg class="main__reviews-net" width="13" height="8" viewBox="0 0 13 8">
+                                            <use xlink:href="img/vk.svg#vk"></use>
+                                        </svg>
+                                    </a></li>
+                                    <li class="main__reviews-item"><a href="" class="main__reviews-link">
+                                        <svg class="main__reviews-net" width="16" height="11" viewBox="0 0 16 11">
+                                            <use xlink:href="img/twitter.svg#twitter"></use>
+                                        </svg>
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

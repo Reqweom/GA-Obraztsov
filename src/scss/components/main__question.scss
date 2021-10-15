@@ -1,6 +1,7 @@
 .main__question{
     text-align: center;
     background-color: #1F1C1D;
+    padding-bottom: 50px;
 }
 
 .main__question-title{
@@ -9,35 +10,35 @@
 
 .main__question-answer{
     display: flex;
-    align-items: center;
+    margin-bottom: 30px;
 }
 
 .main__question-number{
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
     width: 100px;
-    height: 100%;
     font-size: 70px;
     color: $gold;
     margin: 0;
+    font-family: "Roboto";
+    font-weight: bold;
 }
 
 .main__question-block{
     border: 1px solid $gold;
     width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
     transition: .3s ease-out;
+    margin-left: 20px;
 }
 
 .main__question-button{
-    position: absolute;
+    display: flex;
+    align-items: center;
     appearance: none;
+    
 }
 
-.main__question-button:checked ~ .main__question-button:after {
+.main__question-button:checked ~ .main__question-q:after {
     background-color: $gold;
+    content: "--";
 }
 
 .main__question-button:checked ~ .main__question-panel{
@@ -47,35 +48,41 @@
 .main__question-panel{
     display: none;
     border-top: 1px solid $gold;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 250px;
 }
 
 .main__question-q{
-    display: block;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin: 0;
+    text-align: left;
 
     cursor: pointer;
 
     transition: background 0.3s ease-out;
+     &::after{
+         content: "+";
+         position: absolute;
+         border-left: 1px solid $gold;
+         height: 80px;
+         right: 40px;
+         padding-left: 40px;
+         padding-right: 40px;
+         padding-top: 25px;
+         font-size: 30px;
+     }
 }
 
-.main__question-q::after{
-    content: "";
-    display: block;
-    border-left: 1px solid $gold;
-
-    position: absolute;
-    top: 50%;
-    right: 15px;
-}
 
 .main__question-btn{
-    margin-top: 150px;
-    margin-bottom: 150px;
+    position: absolute;
+    right: 40px;
 }
