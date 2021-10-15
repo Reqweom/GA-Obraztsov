@@ -26,6 +26,7 @@
 .main__aboutus-button{
     height: 300px;
     display: flex;
+    justify-content: flex-end;
     flex-wrap: wrap;
     &:hover{
         background-color: #A07B50;
@@ -57,3 +58,70 @@
 .main__aboutus-logo{
     fill: #A07B50;
 }
+
+@media (max-width: $large-width) {
+    .main__aboutus{
+        text-align: center;
+        background-color: #000;
+        background-size: 100%;
+        height: 1342px;
+    }
+
+    .main__aboutus-list{
+        padding-top: 60px;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 1000px;
+    }
+  }
+  
+  @media (max-width: $tablet-width) {
+    .main__aboutus{
+        text-align: center;
+        background-color: #000;
+        background-size: 100%;
+        height: 1080px;
+    }
+
+    .main__aboutus-list{
+        padding-left: 0;
+        padding-top: 60px;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 800px;
+    }
+
+    .main__aboutus-item{
+        height: 218px;
+        width: 290px;
+        background-color: #1F1C1D;
+    }
+    
+    .main__aboutus-button{
+        height: 218px;
+        display: flex;
+        flex-wrap: wrap;
+        &:hover{
+            background-color: #A07B50;
+            border: 5px solid #1F1C1D;
+            .main__aboutus-picture{
+                fill: #fff; 
+            }
+            transition: 0.3s ease;
+        }
+    }
+
+    .main__aboutus-picture{
+        width: 80px;
+        height: 80px;
+        margin-top: 25px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .main__aboutus-description{
+        font-size: 14px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+  }

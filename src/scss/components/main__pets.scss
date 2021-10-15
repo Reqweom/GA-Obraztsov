@@ -43,10 +43,139 @@
     font-size: 36px;
 }
 
+.main__pets-swiper{
+    display: none;
+}
+
+.main__pets-arrow{
+    fill: none;
+    stroke: $gold;
+    stroke-width: 2px;
+}
+
 @media (max-width: $large-width) {
+    .main__pets{
+        margin-top: 110px;
+    }
+
+    .main__pets-pref{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .main__pets-menu{
+        padding-right: 200px;
+        padding-left: 200px;
+    }
+
+    .main__pets-swiper{
+        display: flex;
+        position: absolute;
+        justify-content: space-between;
+        align-items: center;
+        right: 0;
+        left: 0;
+        top: 53%;
+    }
+
+    .main__pets-arrow{
+        stroke: $gold;
+        &:hover{
+            stroke: #fff;
+            transition: 0.3s ease-out;
+        }
+    }
+
+    .main__pets-cat{
+        padding-top: 120px;
+        display: flex;
+        position: absolute;
+    }
+
+    .cat-general{
+        z-index: 22;
+        padding-top: 0;
+        position: absolute;
+    }
     
-  }
+    .cat-left{
+        left: 40px;
+        height: 300px;
+    }
+
+    .cat-right{
+        right: 40px;
+        height: 300px;
+    }
+}
   
   @media (max-width: $tablet-width) {
+    .main__pets{
+        margin-top: 60px;
+    }
+
+    .title{
+        font-size: 28px;
+    }
+
+    .txt{
+        font-size: 14px;
+    }
+
+    .main__pets-pref{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .main__pets-menu{
+        padding-right: 0;
+        padding-left: 0;
+        font-size: 16px;
+        width: 234px;
+        margin-left: 25px;
+    }
+
+    .main__pets-collage{
+        display: flex;
+        margin-bottom: 250px;
+    }
+
+    .main__pets-swiper{
+        display: flex;
+        position: absolute;
+        justify-content: space-between;
+        align-items: center;
+        right: 0;
+        left: 0;
+        top: 60%;
+    }
+
+    .main__pets-arrow{
+        stroke: $gold;
+        &:hover{
+            stroke: #fff;
+            transition: 0.3s ease-out;
+        }
+    }
+
+    .main__pets-cat{
+        padding-top: 120px;
+        display: flex;
+        position: absolute;
+    }
+
+    .cat-general{
+        z-index: 22;
+        padding-top: 0;
+        position: absolute;
+        height: 248px;
+    }
     
+    .cat-left{
+        display: none;
+    }
+
+    .cat-right{
+        display: none;
+    }
   }

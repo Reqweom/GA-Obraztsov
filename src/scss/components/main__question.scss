@@ -86,3 +86,29 @@
     position: absolute;
     right: 40px;
 }
+
+@media (max-width: $large-width) {
+    .main__question-q{
+        padding-left: 10px;
+    }
+
+    .main__question-panel{
+        padding-left: 10px;
+        padding-right: 160px;
+    }
+  }
+  
+  @media (max-width: $tablet-width) {
+    .main__question-q{
+        padding-left: 10px;
+    }
+
+    .main__question-panel{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .main__question-number{
+        display: none;
+    }
+  }
