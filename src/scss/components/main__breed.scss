@@ -46,22 +46,22 @@
     &:nth-child(1){
         top: 27%;
         width: 320px;
-        left: 5%;
+        left: 2%;
     }
     &:nth-child(2){
         top: 40%;
         width: 250px;
-        right: 10.7%;
+        right: 8%;
     }
     &:nth-child(3){
         top: 57%;
         width: 250px;
-        left: 8.9%;
+        left: 6.1%;
     }
     &:nth-child(4){
         top: 60%;
         width: 240px;
-        right: 14.1%;
+        right: 11.8%;
     }
     &:nth-child(odd)::after{
         content: '•';

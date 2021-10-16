@@ -1,4 +1,5 @@
 .main__team{
+    padding-top: 15px;
     text-align: center;
     background-color: #151313;
 }
@@ -107,8 +108,8 @@
   
   @media (max-width: $tablet-width) {
       .main__team-infomate{
-          border: none;
-          padding: 0;
+          border: none !important;
+          padding: 0 !important;
       }
 
     .main__team-pref{
@@ -117,6 +118,7 @@
     }
 
     .main__team-block{
+        margin-top: 100px;
         width: 290px;
         text-align: center;
         background-color: #1F1C1D;
@@ -130,7 +132,7 @@
         position: absolute;
         width: 156px;
         top: 150px;
-        left: 20px;
+        left: 85px;
         background-color: #151313;
     }
 
@@ -139,5 +141,11 @@
         font-size: 14px;
         line-height: 1.5em;
         margin-bottom: 0;
+    }
+
+    .main__team-soclist{
+        margin-left: 90px;
+        width: 100px;
+        justify-content: space-between;
     }
   }

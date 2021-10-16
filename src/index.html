@@ -87,7 +87,7 @@
                     <div class="main-breeds__inner">
                         <div class="main-breeds_lead lead__text">
                             <h2 class="lead__text-title title">Особенности породы</h2>
-                            <p class="lead__text-subtitle subtitle">Мейн-Кун - это порода, которая вызывает к себе уважение. Приобретая в свой дом этого питомца, вы получите умное животное, которому нет равных</p>
+                            <p class="lead__text-subtitle txt">Мейн-Кун - это порода, которая вызывает к себе уважение. Приобретая в свой дом этого питомца, вы получите умное животное, которому нет равных</p>
                         </div>
                         <div class="features__content">
                             <picture>
@@ -191,38 +191,38 @@
             </section>
 
             <section class="main__team"> <!--Наша команда-->
-                <div class="container">
-                    <h2 class = "main__team-title title">Наша команда</h2>
-                    <p class="main__team-pref txt">Все сотрудники нашего питомника дипломированые специалисты в области фелинологии и ветеринарии</p>
-                    <div class="main__team-mate">
-                        <img src="img/faceteam.png" alt="" class="main__team-photo">
-                        <div class="main__team-infomate">
-                            <div class="main__team-block">
-                                <h3 class="main__team-name">Сережа Попов</h3>
-                                <p class="main__team-position">Основатель питомника</p>
-                                <p class="main__team-quote">Наш питомник занимается разведением Мейн-Кунов на протяжениие 15 лет. Мы в ответе за каждого приобретенного вами питомца</p>
-                                <ul class="main__team-soclist">
-                                    <li class="main__team-item"><a href="" class="main__team-link">
-                                        <svg class="main__team-net net" width="13" height="8" viewBox="0 0 13 8">
-                                            <use xlink:href="img/vk.svg#vk"></use>
-                                        </svg>
-                                    </a></li>
-                                    <li class="main__team-item"><a href="" class="main__team-link">
-                                        <svg class="main__team-net net" width="16" height="11" viewBox="0 0 16 11">
-                                            <use xlink:href="img/twitter.svg#twitter"></use>
-                                        </svg>
-                                    </a></li>
-                                    <li class="main__team-item"><a href="" class="main__team-item">
-                                        <svg class="main__team-net net" width="6" height="12" viewBox="0 0 6 12">
-                                            <use xlink:href="img/facebook.svg#facebook"></use>
-                                        </svg>
-                                    </a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+              <div class="container">
+                  <h2 class = "main__team-title title">Наша команда</h2>
+                  <p class="main__team-pref txt">Все сотрудники нашего питомника дипломированые специалисты в области фелинологии и ветеринарии</p>
+                  <div class="main__team-mate">
+                      <img src="img/faceteam.png" alt="" class="main__team-photo">
+                      <div class="main__team-infomate">
+                          <div class="main__team-block">
+                              <h3 class="main__team-name">Сережа Попов</h3>
+                              <p class="main__team-position">Основатель питомника</p>
+                              <p class="main__team-quote">Наш питомник занимается разведением Мейн-Кунов на протяжениие 15 лет. Мы в ответе за каждого приобретенного вами питомца</p>
+                              <ul class="main__team-soclist">
+                                  <li class="main__team-item"><a href="" class="main__team-link">
+                                      <svg class="main__team-net net" width="13" height="8" viewBox="0 0 13 8">
+                                          <use xlink:href="img/vk.svg#vk"></use>
+                                      </svg>
+                                  </a></li>
+                                  <li class="main__team-item"><a href="" class="main__team-link">
+                                      <svg class="main__team-net net" width="16" height="11" viewBox="0 0 16 11">
+                                          <use xlink:href="img/twitter.svg#twitter"></use>
+                                      </svg>
+                                  </a></li>
+                                  <li class="main__team-item"><a href="" class="main__team-item">
+                                      <svg class="main__team-net net" width="6" height="12" viewBox="0 0 6 12">
+                                          <use xlink:href="img/facebook.svg#facebook"></use>
+                                      </svg>
+                                  </a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
 
             <section class="main__question"> <!--Вопрос-ответ-->
                 <div class="container">
@@ -292,7 +292,7 @@
                             </div>
                         </div>
                     </div>
-                    <a class="main__question-btn button">Задать вопрос</a>
+                    <a id="ask-btn" class="main__question-btn button">Задать вопрос</a>
                 </div>
             </section>
             
@@ -357,5 +357,39 @@
             </div> 
         </div>
     </footer>
+
+    <div class="popup" id="call">
+      <div class="popup__content">
+          <div class="popup__header">
+              <h2 class="popup__header-title">Заказать звонок</h2>
+              <button class="close-popup" id="close-popup">
+                  <svg class="close-popup-icon" width="16" height="16" viewBox="0 0 16 16">
+                      <use xlink:href="#btn-close"></use>
+                  </svg>
+              </button>
+          </div>
+          <p class="popup__content-text">Отвечаем и звоним каждый день, с 10:00 до 24:00</p>
+          <form class="form" action="#">
+              <div class="form__main">
+                  <div class="form__data-item">
+                      <label class="form__data-title" for="name">Как к вам обращаться?</label>
+                      <input class="form__data-input" type="text" name="name" id="name" placeholder="Введите имя">
+                  </div>
+                  <div class="form__data-item">
+                      <label class="form__data-title" for="phone">Как к вам обращаться?</label>
+                      <input class="form__data-input" id="phone" type="tel" name="phone" placeholder="+7(___)___-__-__">
+                  </div>
+              </div>
+              
+              <div class="form__footer">
+                  <div class="form__footer-agreement">
+                      <p class="form__footer-text">Нажимая на кнопку «Заказать звонок», я даю <a href="#" class="form__footer-link">согласие на обработку персональных данных</a></p>
+                  </div>
+                  <button class="form__footer-button" type="submit">заказать звонок</button>
+              </div>
+          </form>
+      </div>
+  </div>
+  
 </body>
 </html>

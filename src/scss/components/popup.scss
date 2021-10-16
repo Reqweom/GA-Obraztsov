@@ -1,0 +1,222 @@
+.popup{
+    visibility: hidden;
+    z-index:-999;
+    opacity: 0;
+    position: fixed;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($color: #674C33, $alpha: .5);
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.popup--active{
+    visibility: visible;
+    z-index:999;
+    opacity: 1;
+}
+
+.popup__content{
+    cursor: default;
+    background-color: #fff;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 680px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 40px 40px;
+}
+
+.popup__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup__header-title{
+    font-family: 'yesevaone';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #674C33;
+    margin: 0;
+}
+
+.close-popup{
+    background: none;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    &:hover .close-popup-icon{
+        fill: #674C33;
+    }
+}
+
+.close-popup-icon{
+    fill: $gold;
+    transition: all .3s ease;
+}
+
+.popup__content-text{
+    font-size: 18px;
+    color: #674C33;
+    font-weight: 500;
+    line-height: 21px;
+    font-family: 'Roboto';
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.form__main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 0 0;
+}
+
+.form__data-item{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.form__data-title{
+    font-size: 16px;
+    font-family: "Roboto";
+    font-weight: 700;
+    color: #674C33;
+    padding: 6px 0;
+    margin: 0;
+}
+
+.form__data-input{
+    font-size: 14px;
+    font-family: "Roboto";
+    font-weight: 500;
+    padding: 18px 24px;
+    border-radius: 4px;
+    border: 1px solid rgba(103, 76, 51, 0.1);
+    background: none;
+}
+
+.form__footer{
+    padding: 40px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form__footer-agreement{
+    width: 45%;
+}
+
+.form__footer-text{
+    color: $gold;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.form__footer-link{
+    text-decoration: underline;
+    color: $gold;
+}
+
+.form__footer-button{
+    text-transform: uppercase; 
+    font-size: 14px;
+    font-family: "Roboto";
+    font-weight: 700;
+    color: #fff;
+    border: 0.5px solid $gold;
+    width: 45%;
+    cursor: pointer;
+    background-color: $gold;
+    padding: 22px 50px;
+    transition: all .3s ease;
+    &::after{
+        content: ' →';
+        font-weight: 700;
+    }
+    &:hover{
+        border: 0.5px solid $gold;
+        background-color: #fff;
+        color: $gold;
+    }
+}
+
+@media (max-width: $large-width) {
+    .popup__content{
+        background-color: #fff;
+        box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        position: absolute;
+        width: 284px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding: 15px;
+    }
+
+    .form__data-item{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .form__main{
+        flex-direction: column-reverse;
+    }
+
+    .form__footer{
+        padding: 20px 0 0 0;
+        flex-direction: column-reverse;
+    }
+
+    .form__footer-agreement{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .popup__header-title{
+        font-size: 18px;
+    }
+
+    .popup__content-text {
+        font-size: 16px;
+    }
+
+    .form__data-title,.form__data-input{
+        font-size: 14px;
+    }
+
+    .form__footer-text{
+        font-size: 10px;
+    }
+
+    .form__footer-button{ 
+        font-size: 11px;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .form__footer-text{
+        font-size: 10px;
+        line-height: 15px;
+    }
+}
+
+@media (max-width: $tablet-width) {
+
+}
