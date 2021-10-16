@@ -82,19 +82,38 @@
                 </div>
             </section>
 
-            <section class="main__preed"> <!--Особенности породы-->
+            <section class="main-breeds">
                 <div class="container">
-                    <h2 class="main__preed-title title">Особенности породы</h2>
-                    <p class="main__preed-pref txt">Мейн-Кун - это порода, которая вызывает к себе уважение. Приобретая в свой дом этого питомца, вы получите умное животное, которому нет равных </p>
-                    <ul>
-                        <li>Легко уживается в семьях с детьми или другими животными</li>
-                        <li>Внешний вид этой кошки похож на дикую рысь</li>
-                        <li>Выполняет команды как дрессированная собака</li>
-                        <li>Вес может достигать 12 кг, а длина 1 м</li>
-                    </ul>
-                    <img src="img/котя3.png" alt="">
+                    <div class="main-breeds__inner">
+                        <div class="main-breeds_lead lead__text">
+                            <h2 class="lead__text-title title">Особенности породы</h2>
+                            <p class="lead__text-subtitle subtitle">Мейн-Кун - это порода, которая вызывает к себе уважение. Приобретая в свой дом этого питомца, вы получите умное животное, которому нет равных</p>
+                        </div>
+                        <div class="features__content">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="img/breeds-cat-mobile@1x.png 1x, img/breeds-cat-mobile@2x.png 2x">
+                                <source media="(max-width: 1365px)" srcset="img/breeds-cat-tablet@1x.png 1x, img/breeds-cat-tablet@2x.png 2x">
+                                <img class="features__content-picture" src="img/breeds-cat-desktop@1x.png" srcset="img/breeds-cat-desktop@2x.png 2x" alt="Особенности породы">
+                            </picture>
+    
+                            <ul class="features__content-list">
+                                <li class="features__content-item">
+                                    <p class="features__content-text">Легко уживается в семьях с детьми или другими животными</p>
+                                </li>
+                                <li class="features__content-item">
+                                    <p class="features__content-text">Выполняет команды как дрессированная собака</p>
+                                </li>
+                                <li class="features__content-item">
+                                    <p class="features__content-text">Внешний вид этой кошки похож на дикую рысь</p>
+                                </li>
+                                <li class="features__content-item">
+                                    <p class="features__content-text">Вес может достигать 12 кг, а длина 1 м</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </section>
+            </section> 
 
             <section class="main__aboutus"> <!--О нас-->
                 <div class="container">
@@ -104,7 +123,7 @@
                         <li class="main__aboutus-item">
                             <a href="#" class="main__aboutus-button">
                                 <div class="main__aboutus-picture">
-                                    <svg class="main__aboutus-logo" width="99" height="107"     viewBox="0 0 99 107">
+                                    <svg class="main__aboutus-logo" width="99" height="107" viewBox="0 0 99 107">
                                         <use xlink:href="img/aboutus1.svg#aboutus1"></use>
                                     </svg>
                                 </div>

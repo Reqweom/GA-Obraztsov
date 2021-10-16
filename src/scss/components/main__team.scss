@@ -106,6 +106,11 @@
   }
   
   @media (max-width: $tablet-width) {
+      .main__team-infomate{
+          border: none;
+          padding: 0;
+      }
+
     .main__team-pref{
         padding-left: 20px;
         padding-right: 20px;
@@ -119,11 +124,6 @@
         padding-right: 10px;
         padding-top: 50px;
         padding-bottom: 5px;
-    }
-
-    .main__team-infomate{
-        border: none;
-        padding: 0;
     }
 
     .main__team-photo{

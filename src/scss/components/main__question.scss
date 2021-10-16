@@ -89,7 +89,7 @@
 
 @media (max-width: $large-width) {
     .main__question-q{
-        padding-left: 10px;
+        padding-left: 20px;
     }
 
     .main__question-panel{
@@ -99,13 +99,32 @@
   }
   
   @media (max-width: $tablet-width) {
+    .main__question-block{
+        align-items: center;
+        height: 50px;
+        margin-left: 0;
+    }
+
     .main__question-q{
+        height: 50px;
+        align-items: center;
         padding-left: 10px;
+        padding-right: 30px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        &::after{
+            height: 48px;
+            right: 15px;
+            padding-left: 9px;
+            padding-right: 10px;
+            padding-top: 15px;
+            font-size: 20px;
+        }
     }
 
     .main__question-panel{
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .main__question-number{

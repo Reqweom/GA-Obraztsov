@@ -1,6 +1,11 @@
+.main{
+    background-color: #1F1C1D;
+}
+
 .main__reviews{
     text-align: center;
     background-color: #1F1C1D;
+    padding-bottom: 40px;
 }
 
 .main__reviews-title{
@@ -67,7 +72,7 @@
 }
 
 .main__reviews-item{
-    fill: $gold;
+    cursor: pointer;
     display: flex;
     padding-left: 4px;
     height: 25px;
@@ -76,7 +81,92 @@
     justify-content: space-between;
     align-items: center;
     &:hover{
-        fill: #fff;
-        transition: 0.3s ease;
+        .main__reviews-net{
+            fill: #fff;
+            transition: 0.3s ease;
+        }
     }
 }
+
+.main__reviews-net{
+    fill: $gold;
+}
+
+@media (max-width: $large-width) {
+    .main__reviews-image{
+        width: 302px;
+        top: 60px;
+        left: 225px;
+    }
+
+    .main__reviews-socblock{
+        justify-content: center;
+        width: 100%;
+    }
+
+    .main__reviews-block{
+        justify-content: center;
+    }
+
+    .main__reviews-review{
+        margin-top: 80px;
+        height: 368px;
+        width: 578px;
+        text-align: center;
+        background-color: #151313;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .main__reviews-quote{
+        padding-right: 70px;
+        padding-left: 70px;
+    }
+  }
+  
+  @media (max-width: $tablet-width) {
+    .main__reviews{
+        padding-top: 30px;
+    }
+
+    .main__reviews-image{
+        width: 242px;
+        top: 60px;
+        left: 45px;
+    }
+
+    .main__reviews-socblock{
+        justify-content: center;
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    .main__reviews-block{
+        justify-content: center;
+    }
+
+    .main__reviews-review{
+        margin-top: 100px;
+        height: 357px;
+        width: 290px;
+        text-align: center;
+        background-color: #151313;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .main__reviews-name{
+        font-size: 18px;
+    }
+
+    .main__reviews-quote{
+        font-size: 14px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-bottom: 5px;
+    }
+  }

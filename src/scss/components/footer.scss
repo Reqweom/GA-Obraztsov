@@ -1,6 +1,6 @@
 .footer{
     height: 155px;
-    background-color: #1F1C1D;
+    background-color: #151313;
 }
 
 .footer__components{
@@ -36,3 +36,34 @@
     color: #fff;
     font-weight: bold;
 }
+  
+  @media (max-width: $tablet-width) {
+    .footer{
+        height: 211px;
+    }
+
+    .footer-location{
+        font-size: 14px;
+    }
+
+    .footer-number{
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    .footer__components{
+        padding-top: 25px;
+        height: 211px;
+        flex-direction: column-reverse;
+        padding-bottom: 30px;
+    }
+
+    .footer__social-list{
+        padding: 0;
+    }
+
+    .footer__social-net{
+        width: 20px;
+        height: 20px;
+    }
+  }

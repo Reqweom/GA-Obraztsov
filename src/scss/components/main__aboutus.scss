@@ -1,4 +1,5 @@
 .main__aboutus{
+    padding-top: 0;
     text-align: center;
     background-color: #000;
     background-size: 100%;
@@ -18,21 +19,20 @@
 }
 
 .main__aboutus-item{
-    height: 300px;
     width: 360px;
     background-color: #1F1C1D;
 }
 
 .main__aboutus-button{
-    height: 300px;
+    width: 360px;
     display: flex;
     justify-content: flex-end;
+    border: 10px solid #1F1C1D;
     flex-wrap: wrap;
     &:hover{
         background-color: #A07B50;
-        border: 10px solid #1F1C1D;
         .main__aboutus-logo{
-            fill: #fff; 
+            fill: #fff;
         }
         transition: 0.3s ease;
     }
@@ -99,6 +99,7 @@
     
     .main__aboutus-button{
         height: 218px;
+        width: 290px;
         display: flex;
         flex-wrap: wrap;
         &:hover{

@@ -1,0 +1,188 @@
+.main-breeds{
+    background-color: #1F1C1D;
+    padding: 30px 0;
+}
+
+.main-breeds__inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-breeds_lead{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 45px;
+}
+
+.features__content{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.features__content-picture{
+    max-height: 100%;
+    max-width: 623px;
+    object-fit: cover;
+    margin: 0 auto;
+}    
+
+.features__content-list{
+    list-style-type:none;
+    padding: 0;
+}
+
+.features__content-item{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &:nth-child(1){
+        top: 27%;
+        width: 320px;
+        left: 5%;
+    }
+    &:nth-child(2){
+        top: 40%;
+        width: 250px;
+        right: 10.7%;
+    }
+    &:nth-child(3){
+        top: 57%;
+        width: 250px;
+        left: 8.9%;
+    }
+    &:nth-child(4){
+        top: 60%;
+        width: 240px;
+        right: 14.1%;
+    }
+    &:nth-child(odd)::after{
+        content: '•';
+        font-size: 55px;
+        color: $gold;
+        margin:0 0 20px 23px;
+    }
+    &:nth-child(even)::before{
+        content: '•';
+        font-size: 55px;
+        color: $gold;
+        margin:0 23px 20px;
+    }
+
+    &:nth-child(odd) .features__content-text{
+        text-align: right;
+    }
+
+    &:nth-child(even) .features__content-text{
+        text-align: left;  
+    }
+}
+
+.features__content-text{
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 25px;
+    color: #FFFFFF;
+    display: block;
+    text-align: left;
+}
+
+
+@media (max-width: $large-width) {
+    .main-breeds_lead{
+        width: 80%;
+        padding: 0 20px;
+        margin-bottom: 40px;
+    }
+
+    .features__content-picture{
+        max-width: 440px;
+    } 
+
+    .features__content-item{
+        &:nth-child(1){
+            top: 26.5%;
+            width: 168px;
+            left: -0.4%;
+        }
+        &:nth-child(2){
+            top: 37%;
+            width: 132px;
+            right: 4.7%;
+        }
+        &:nth-child(3){
+            top: 55%;
+            width: 160px;
+            left: -1.5%;
+        }
+        &:nth-child(4){
+            top: 58%;
+            width: 140px;
+            right: 6.6%;
+        }
+        &:nth-child(odd)::after{
+            font-size: 44px;
+            margin:0 0 40px 12px;
+        }
+        &:nth-child(even)::before{
+            font-size: 44px;
+            margin:0 12px 40px;
+        }
+    }
+    .features__content-text{
+        font-size: 14px;
+        line-height: 21px;
+    }
+} 
+
+@media (max-width: $tablet-width) {
+    .main-breeds_lead{
+        width: 100%;
+        padding: 0 5px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .features__content-picture{
+        max-width: 290px;
+    } 
+
+    .features__content-item{
+        position: static; 
+        &:nth-child(1),&:nth-child(2),&:nth-child(3),&:nth-child(4){
+            width: 100%;
+        }
+        &:nth-child(odd)::after{
+            content: none;
+            margin:0;
+        }
+        &:nth-child(even)::before,&:nth-child(odd)::before{
+            content: '•';
+            font-size: 35px;
+            color: $gold;
+            margin:0 10px 14px;
+        }
+        &:nth-child(odd) .features__content-text{
+            text-align: left;
+        }
+        &:last-child::before{
+            margin:0 10px 0px;
+        }
+
+    }
+
+    .features__content-text{
+        line-height: 19px;
+        text-align: left;
+        margin: 5px 0;
+    }
+}
